@@ -1,0 +1,31 @@
+application: uav-center
+version: 5
+runtime: python
+api_version: 1
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /favicon.ico
+  mime_type: image/gif 
+  static_files: favicon.ico
+  upload: favicon.ico
+
+- url: /
+  script: control.py
+
+- url: /logs
+  script: control.py
+
+- url: /settings
+  script: control.py
+
+- url: /button
+  script: control.py
+
+- url: /result
+  script: control.py

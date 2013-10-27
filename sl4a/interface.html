@@ -1,0 +1,28 @@
+<html>
+<body bgcolor=#000000>
+
+
+
+
+<p id="html_code" style="display: inline;">Loading...</p>
+      
+
+<script>
+      var droid = new Android();
+      var html_value = function(data) {
+          document.getElementById("html_code").innerHTML = data.data;
+      }
+      droid.registerCallback("html_code", html_value);
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -10,9 +10,9 @@ int pinForward = 10;
 int pinRevers  = 9;
 int pinFR      = 11;
 
-int pinRight   = 2;
-int pinLeft    = 3;
-int pinLR      = 4;
+int pinRight   = 6;
+int pinLeft    = 5;
+int pinLR      = 3;
 
 
 int maxN=5;
@@ -46,7 +46,7 @@ void setup()
   pinMode(pinLeft, OUTPUT);  
   digitalWrite(pinLeft, LOW);
 
-  pinMode(pinFR, OUTPUT);  
+  pinMode(pinLR, OUTPUT);  
   analogWrite(pinLR, LOW);
 
 
